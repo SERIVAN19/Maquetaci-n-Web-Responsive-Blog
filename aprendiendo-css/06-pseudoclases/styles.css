@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    font-size: 30px;
+}
+
+
+/**SELECCIONA AL PRIMER HIJO DE LA LISTA */
+ul li:first-child{/*Primer hijo*/
+    color: purple;
+    font-weight: bold;
+}
+/**SELECCIONA AL 2 QUE COLOQUE DE LA LISTA HIJO DE LA LISTA */
+ul li:nth-child(3){
+    color: orangered;
+    font-weight: bold;
+}
+
+#mi-enlace{
+    text-decoration: none;
+    color: salmon;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#mi-enlace:link{
+   color: green;
+}
+#mi-enlace:visited{
+    color: orangered;
+ }
+ 
+ #mi-enlace:hover{
+    font-size: 30px;
+ }
+ #mi-enlace:active{
+    border: 1px solid green;
+    border-radius: 20px;
+    height: 10px;
+    width: 30px;
+ }
+
+ input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+ }
+ input[type="text"]:focus{
+    background: aqua;
+    border-radius: 20px;
+ }
+ 

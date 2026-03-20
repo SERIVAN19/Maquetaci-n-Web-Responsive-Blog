@@ -1,0 +1,46 @@
+#layout{
+    margin: 0px auto;
+    display: flex;/*Flexbox*/
+    flex-direction: row;/*Direccion*/
+    flex-wrap: wrap;/*Envoltorio*/
+    /*flex-flow: row wrap;  une la direccion y el envoltorio*/
+    justify-content: space-around;
+    align-items: center; /*permitiría alinear los elementos en el eje vertical.*/
+    background-color: aqua;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+    height: 400px  ;
+}
+.caja{
+    /*flex-basis: auto;*/
+    /*flex-grow: 1;Hcae que los elementos sean felxibles*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: beige;
+    padding: 20px;
+    border: 4px solid #f222 ;
+    margin: 1px;
+    background: gray;
+
+}
+.red{
+    /*flex-grow: 3;*/
+    /*order: 4; ordena los elementos, se aplica al contenido de la caja*/
+    background: red;
+}
+.green{
+    flex-shrink: 1;/*Reduce el tamaño de los elementos*/
+    /*order: 3;*/
+    background: green;
+}
+.blue{
+    /*order: 1;*/
+    background: blue ;
+}
+.orange{
+    /*order: 2;*/
+    align-self: flex-end;
+    background: orange;
+}

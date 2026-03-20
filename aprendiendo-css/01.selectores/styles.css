@@ -1,0 +1,82 @@
+/*Selectores*/
+/*Selector universal*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Selector de etiqueta*/
+h1 {
+  background: lightblue;
+  color: rgb(28, 140, 214);
+  padding: 10px;
+}
+
+a{
+  font-size: 18px;
+  color: green;
+  text-decoration: none;
+}
+
+/*Selector de ID*/
+#descripcion {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: antiquewhite;
+}
+
+/*Slector de clase*/
+.parrafo {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*Selector de atributo*/
+#usuario {
+  margin-top: 20px;
+}
+
+#usuario form {
+  border: 2px solid blue;
+  margin: 15px;
+  width: 250px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+#usuario form * {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background: green;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  margin: 0px auto;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Selectores hijo*/
+#menu li > a{
+  color: red;
+}
+
+/** PRIORIDAD*/ 
+
+#saludo h1{
+  background-color: blue;
+}
+h1{
+  background: purple;
+}
