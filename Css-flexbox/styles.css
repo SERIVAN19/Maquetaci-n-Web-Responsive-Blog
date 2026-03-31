@@ -1,20 +1,21 @@
 #layout{
-    margin: 0px auto;
-    display: flex;/*Flexbox*/
+    /*display: inline-flex;*/
+    display: flex;/* Flexbox*/
     flex-direction: row;/*Direccion*/
     flex-wrap: wrap;/*Envoltorio*/
     /*flex-flow: row wrap;  une la direccion y el envoltorio*/
     justify-content: space-around;
-    align-items: center; /*permitiría alinear los elementos en el eje vertical.*/
+    align-items:center; /*permitiría alinear los elementos en el eje vertical.*/
     background-color: aqua;
     border: 1px solid blue;
     border-radius: 5px;
     padding: 5px;
-    height: 400px  ;
+    height: 400px ;
+    margin: 0px auto;
 }
 .caja{
     /*flex-basis: auto;*/
-    /*flex-grow: 1;Hcae que los elementos sean felxibles*/
+    /*flex-grow: 1; Hace que los elementos sean flexibles se aplica a los hijos*/
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -26,7 +27,7 @@
 
 }
 .red{
-    /*flex-grow: 3;*/
+    /*flex-grow: 3;   */
     /*order: 4; ordena los elementos, se aplica al contenido de la caja*/
     background: red;
 }
@@ -41,6 +42,7 @@
 }
 .orange{
     /*order: 2;*/
-    align-self: flex-end;
+    align-self: flex-start;
     background: orange;
+    flex-basis: 80%;
 }

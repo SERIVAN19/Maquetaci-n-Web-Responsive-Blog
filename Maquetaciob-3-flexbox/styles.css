@@ -49,7 +49,7 @@
     padding-right: 10px;
 }
 
-#menu>ul {
+#menu> ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
